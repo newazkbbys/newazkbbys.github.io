@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devive-width,
+    initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://newazkbbys.github.io/favicon.ico">
+    <title>在线alert|在线工具|阿兹卡班毕业生</title>
+</head>
+<body>
+    <style>
+        body {
+            cursor:url(https://newazkbbys.github.io/files/mouse.ico),auto;
+            background-image: url("https://newazkbbys.github.io/files/bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+        <header>
+            <a href="https://newazkbbys.github.io">主页>></a><a href="https://newazkbbys.github.io/onlinetools">在线工具>></a><a href="https://newazkbbys.github.io/onlinetools/alert.html">在线alert</a>
+        </header>
+    <center><h1>在线alert</h1></center>
+    <!-- <h2>直接alert</h2> -->
+    
+    <!-- <input type="text" id="alertstr" placeholder="请输入你看到的字母（大写）"/> -->
+    <!-- <button onclick='submit()'>提交</button>
+    <script>
+        function submit(){
+            var oInput =document.getElementById("alertstr") //获取一个id为alertstr的输入框元素；
+            alert(oInput)
+        }
+    </script> -->
+    <!-- <a href="?alertstr="+submit>
+        <button>确定alert</button>
+    </a> -->
+    <br/>
+    <button onclick="alert('在网址后加上?alertstr=[需要alert的字符]即可alert\n请注意:内容若不是英文或数字,可能会出现乱码的现象')">查看方法</button>
+    
+    <script>
+        // function submit(){
+        //     var inputstr = document.getElementsById("alertstr");
+        //     return inputstr;
+        // }
+        function GetRequest(){
+            var url = location.search;
+            console.log(url)
+            var theRequest = new Object();
+            if(url.indexOf("?")!=-1){
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i++){
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest
+        }
+        function GetAlertStr(){
+            var Request = new Object();
+            Request = GetRequest();
+            var alertstr=Request['alertstr'] // 获取名为"alertstr"的参数的值
+            return alertstr
+        }
+        alert(GetAlertStr())
+    </script>
+    <style type="text/css">
+    	body{
+            cursor:url('../files/bg.png'),auto;
+    		background: url("../files/bg.png") no-repeat center center fixed;
+                    /*兼容浏览器版本*/
+                    -webkit-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+    	}
+        /* 鼠标 */
+        head{cursor:url(../files/mouse.ico),auto}
+    </style>
+</body>
+</html>

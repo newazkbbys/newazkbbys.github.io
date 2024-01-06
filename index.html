@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <link rel="SHORTCUT ICON" href="./favicon.ico">
+    <link rel="bookmark" type="image/x-icon" href="./favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devive-width,
+    initial-scale=1.0">
+    <!-- 如果你要看下面的内容，请把窗口拉宽 -->
+    <!--                          MM           MM             MM                                  -->
+    <!--                          MM           MM             MM                                  -->
+    <!--                          MM           MM             MM                                  -->
+    <!--  MMMMMMM@:   MMMMMMMMm   MM    >M@!   MM,NMMMMMMo    MM,NMMMMMMo  cM>      >Mc !@MMMMMM  -->
+    <!--        ,MN       !@N,    MM  CMQ,     MMC      )M)   MMC      )M)  >Mo    cM>  @M.       -->
+    <!--  a@MMMNQMM      OMm      MMHM)        M@        M@   M@        M@   OM;  :MO   .CMM@Oc   -->
+    <!-- HM:    ,MM    !@N,       MM >MN;      MM.      !MO   MM.      !MO    N@. NN         :CMO -->
+    <!-- HMC, :>NMM   OMm         MM   mM@+    MM@):  !QMH    MM@):  !QMH     ,MHOM:    Qo:. ,mMQ -->
+    <!--  !ONNC; MM  MMMMMMMMMM   MM     aMMo  MM !ON@Qa.     MM !ON@Qa.       +MM+     ;)H@NQa.  -->
+    <!--                                                                       OMm                -->
+    <!--                                                                   , !NMm                 -->
+    <!--                                                                   H@Qo                   -->
+    <title>阿兹卡班毕业生</title>
+    <style>
+        body{
+            /* 鼠标 */
+            cursor:url(https://newazkbbys.github.io/files/mouse.ico),auto;
+            /* 背景 */
+            position: absolute;
+            top:auto;
+            right: auto;
+            bottom:auto;
+            left: auto;
+            background: url(https://newazkbbys.github.io/files/bg.png);
+            background-size: cover;
+            backdrop-filter: blur(10px);
+    	}
+
+        #navigation2{
+            list-style-type:none;
+            /*↑移除列表前小标志*/
+            overflow: hidden;
+            margin: 0%;
+            padding: 0%;
+            /* background-color: rgb(179, 81, 179); */
+        }
+        a.nav{
+            text-decoration: none;
+            display: block;
+            /* ↑显示块元素的链接，让整体变为可点击的链接区域 */
+            width: 100px;
+            text-align: center;
+            color:white;
+            padding: 14px 16px;
+        }
+        /* 伪类 */
+        #navigation2 li{
+            /* 设置列表水平 */
+            display: inline;
+            float: left;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #8e24c4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5f078a;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header,.container,.footer{
+            /* 左浮动 */
+            float: left;
+            /* 满浏览器 */
+            width: 100%;
+        }
+        .lside{
+            width: 33%;
+            float: left;
+        }
+        .rside{
+            width: 33%;
+            float: right;
+        }
+        /* 左右边距 */
+        .content{
+            margin: 0px 205px;
+        }
+        .lside,.rside,.content{
+            padding: 5px;
+        }
+        .footer{
+            padding: 10px;
+            background: purple;
+            text-align: left;
+        }
+        .footer_left{
+            width: 33%;
+            float: left;
+        }
+        .footer_right{
+            width: 33%;
+            float: right;
+        }
+        .footer_center{
+            float: center;
+        }
+        @media screen and (max-width:700px){
+            .lside,.rside,.content,.footer_left,.footer_right,.footer_center{
+                width: 100%;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <strong>阿兹卡班毕业生</strong>
+    </header>
+    <br/><br/><br/>
+    <div class="header">
+        <center><h1>主页-2024,重新开始</h1></center>
+        <!-- <img src="https://newazkbbys.github.io/files/banner.gif" style="size:10%"></img> -->
+    </div>
+    <div class="container">
+        <!--
+        主体放入3个盒子，分别是左中右，用margin进行3栏布局
+        中间的栏是自适应的，所以中间的栏放在第3个
+        -->
+        <div class="lside">
+            <a name="跳转"></a>
+            <h2>跳转</h2>
+            <a href = "http://shequ.codemao.cn/user/11952313">
+                <button>阿兹卡班毕业生的个人中心</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.mysxl.cn">
+                <button>另一个官网</button>
+            </a>
+            <br/>
+            <a href="https://github.com/newazkbbys/newazkbbys.github.io">
+                <button>查看网页源文件</button>
+            </a>
+            <br/>
+            <button href="javascript:;" onclick="jsalert('您可以通过oyroyroyr@163.com向阿兹卡班毕业生发送邮件以提交建议')">提交建议</button>
+        </div>
+        <div class="rside">
+            <a name="其它"></a>
+            <h2>其它</h2>
+            <a href = "http://shequ.codemao.cn/user/11952313">
+                <button>关注阿兹卡班毕业生</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/video">
+                <button>【火】自制视频</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/explain.html">
+                <button>说明</button>
+            </a>
+            <br/>
+            <button onclick="copyInnerTextOfCell()">
+                <strong>点击复制网址</strong>
+            </button>
+            <br/>
+            <button href="javascript:;" onclick="FullScreen()">进入/退出全屏</button>
+        </div>
+        <div class="content">
+            <a name="分支"></a>
+            <h2>分支</h2>
+            <a href = "http://newazkbbys.github.io/works">
+                <button>作品</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/jchj.html">
+                <button>教程合集</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/WenJianChuanShuZhuShou.html">
+                <button>接收传输文件</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/onlinetools">
+                <button>🛠️🛠️【火】在线工具🛠️🛠️</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/update_log.html">
+                <button>更新日志</button>
+            </a>
+            <br/>
+            <a href = "https://newazkbbys.github.io/aboutbys">
+                <button>关于毕业生</button>
+            </a>
+        </div>
+    </div>
+
+    <a name="公告"></a>
+    <center><h2>公告</h2></center>
+    <center><p>2023年7月3日,毕业生上源码传说啦!泰裤辣!</p></center>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <center><p id="底线">--毕业生是有底线的--</p></center>
+    <div class="footer">
+        <div class="footer_left">
+            <a name="快速链接"></a>
+            <strong><font color="white">快速链接</font></strong>
+            <br/>
+            <a href="https://shequ.codemao.cn/user/11952313" target="_blank">
+                <font color="white" size="2">个人中心</font>
+            </a>
+            <br/>
+            <a href="https://shequ.codemao.cn/work_shop/20325" target="_blank">
+                <font color="white" size="2">阿兹卡班社区</font>
+            </a>
+        </div>
+        <div class="footer_right">
+            <a name="其它信息"></a>
+            <strong><font color="white">其它信息</font></strong>
+            <br/>
+            <a href="https://icp.gov.moe/?keyword=20230423" target="_blank">
+                <font color="white" size="2">萌ICP备20230423号</font>
+            </a>
+            <br/>
+            <a href="https://github.com/newazkbbys/newazkbbys.github.io/actions/runs/3851599384"><font id="uptime" color="white" size="2"></font></a>
+        </div>
+        <div class="footer_center">
+            <a name="友情链接"></a>
+            <strong><font color="white">友情链接</font></strong>
+            <br/>
+            <a href="https://shequ.codemao.cn" target="_blank">
+                <font color="white" size="2">编程猫社区</font>
+            </a>
+        </div>
+        <br/>
+        <strong><font color="white" size="3">历史上的今天</font></strong>
+        <font color="white" size="2"><div id="historytoday"></div></font>
+        <br/>
+        <br/>
+        <center><strong><font color="white">copyright © 阿兹卡班毕业生</font></strong></center>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        var fullscreen=false
+        //进入全屏
+        function enterFullScreen() {
+            var de = document.documentElement;
+            if (de.requestFullscreen) {
+                de.requestFullscreen();
+            } else if (de.mozRequestFullScreen) {
+                de.mozRequestFullScreen();
+            } else if (de.webkitRequestFullScreen) {
+                de.webkitRequestFullScreen();
+            }
+            fullscreen=true
+        }
+        //退出全屏
+        function exitFullScreen() {
+            var de = document;
+            if (de.exitFullscreen) {
+                de.exitFullscreen();
+            } else if (de.mozCancelFullScreen) {
+                de.mozCancelFullScreen();
+            } else if (de.webkitCancelFullScreen) {
+                de.webkitCancelFullScreen();
+            }
+            fullscreen=false
+        }
+        function FullScreen() {
+            if(fullscreen){
+                exitFullScreen()
+            }else{
+                enterFullScreen()
+            }
+        }
+        copyInnerTextOfCell = (event) => {
+            let innerText = 'https://newazkbbys.github.io';
+            var tmpInput = document.createElement('input');
+            document.body.appendChild(tmpInput);
+            tmpInput.value = innerText;
+            tmpInput.select();
+            document.execCommand('copy')
+            tmpInput.remove();
+            alert('复制成功！内容：' + innerText)
+        }
+
+        function updateUptime() {
+            var launchDate = new Date(2023, 3, 4, 22, 14, 8); // 设置上线时间，年份、月份、日期、小时、分钟、秒钟
+            var currentDate = new Date();
+
+            var timeDiff = currentDate.getTime() - launchDate.getTime();
+            var seconds = Math.floor(timeDiff / 1000) % 60;
+            var minutes = Math.floor(timeDiff / (1000 * 60)) % 60;
+            var hours = Math.floor(timeDiff / (1000 * 60 * 60)) % 24;
+            var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+            var uptimeString = '网站已上线' + days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+            document.getElementById("uptime").textContent = uptimeString;
+        }
+        setInterval(updateUptime, 1000); // 每秒钟更新一次上线时间
+
+        function jsalert(text) {
+            alert(text)
+        };
+
+        // 历史上的今天
+        $(document).ready(function() {
+            $(document).ready(function() {
+            $.ajax({
+                url: "https://api.andeer.top/API/history.php",
+                dataType: "json",
+                success: function(response) {
+                    var data = response.data;
+                    $("#historytoday").text(data);
+                }
+            });
+        });
+        });
+    </script>
+</body>
+</html>
