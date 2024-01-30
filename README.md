@@ -102,9 +102,9 @@ Diligent Azkbbys has made the update log of the website into a web page~ [Click 
 
 ## Description
 
-Look, why is there a "new" in front of the URL? ~~ Because my github username has a new~~ in front of it because it also has an "old" [poke me to check] (https://azkbbys.github.io), but that "old" has stopped updating.
+Look, why is there a "new" in front of the URL? ~~Because my github username has a new~~ in front of it because it also has an "old" [poke me to check] (https://azkbbys.github.io), but that "old" has stopped updating.
 
-So why stop updating? ~~ Because Azkbbys is lazy ~~ Because the account of [azkbbys] (https://github.com/azkbbys) requires 2FA verification, and I can't verify it, so I registered a new account to continue updating the website!
+So why stop updating? ~~Because Azkbbys is lazy~~ Because the account of [azkbbys] (https://github.com/azkbbys) requires 2FA verification, and I can't verify it, so I registered a new account to continue updating the website!
 
 ## Declaration
 
