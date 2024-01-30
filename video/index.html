@@ -12,7 +12,7 @@
             overflow: hidden;
             margin: 0%;
             padding: 0%;
-            background-color: rgb(179, 81, 179);
+            /* background-color: rgb(179, 81, 179); */
         }
         a.nav{
             text-decoration: none;
@@ -24,26 +24,107 @@
             padding: 14px 16px;
         }
         /* 伪类 */
-        li a:hover{
-            background-color: purple;
-        }
         #navigation2 li{
             /* 设置列表水平 */
             display: inline;
             float: left;
         }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #8e24c4;
+            color: white;
+            border: none;
+            cursor: url(https://newazkbbys.github.io/files/mouse.ico),auto;
+        }
+
+        button:hover {
+            background-color: #5f078a;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header,.container,.footer{
+            /* 左浮动 */
+            float: left;
+            /* 满浏览器 */
+            width: 100%;
+        }
+        .lside{
+            width: 33%;
+            float: left;
+        }
+        .rside{
+            width: 33%;
+            float: right;
+        }
+        /* 左右边距 */
+        .content{
+            margin: 0px 205px;
+        }
+        .lside,.rside,.content{
+            padding: 5px;
+        }
+        .footer{
+            padding: 10px;
+            background: purple;
+            text-align: left;
+        }
+        .footer_left{
+            width: 33%;
+            float: left;
+        }
+        .footer_right{
+            width: 33%;
+            float: right;
+        }
+        .footer_center{
+            float: center;
+        }
+        @media screen and (max-width:700px){
+            .lside,.rside,.content,.footer_left,.footer_right,.footer_center{
+                width: 100%;
+                margin: 0px;
+            }
+        }
     </style>
 </head>
 <body>
-    <body style="margin: 0%;padding: 0%;">
-        <!-- 制作导航栏2：使用列表 -->
-        <ul id="navigation2">
-            <li><a href="https://newazkbbys.github.io" target="_parent" class="nav">主页</a></li>
-            <li><a href="https://newazkbbys.github.io/video" target="_parent" class="nav">视频</a></li>
-            <li><a href="https://shequ.codemao.cn/user/11952313" target="_blank" class="nav">毕业生</a></li>
-        </ul>
-    </body>
-    <center><h1>视频</h1></center>
+    <header>
+        <a href="https://newazkbbys.github.io">主页>></a><a href="https://newazkbbys.github.io/video">自制视频</a>
+    </header>
+    <br/>
+    <br/>
     <br/>
     <a href = "https://newazkbbys.github.io/video/bysdsp.html">
         <button>毕业生的审判</button>
@@ -80,7 +161,6 @@
     <a href = "https://newazkbbys.github.io/video/gzsp.html">
         <button>近期肝作视频</button>
     </a>
-    <p>没有更多了，投稿视频请e-mail at oyroyroyr@163.com</p>
     <br/>
     <a href = "https://newazkbbys.github.io">
         <button>点我返回</button>
@@ -91,17 +171,15 @@
     </h3>
     <p>由于GitHub文件大小限制,部分视频质量较低,请谅解!</p>
 
-    <style type="text/css">
+    <style>
     	body{
-            cursor:url('https://newazkbbys.github.io/files/bg.png'),auto;
-    		background: url("https://newazkbbys.github.io/files/bg.png") no-repeat center center fixed;
-                    /*兼容浏览器版本*/
-                    -webkit-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
+    	    background: url("../files/bg.png") no-repeat center center fixed;
+            /*兼容浏览器版本*/
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: url(https://newazkbbys.github.io/files/mouse.ico),auto;
     	}
-        /* 鼠标 */
-        head{cursor:url(https://newazkbbys.github.io/files/mouse.ico),auto}
     </style>
 </body>
 </html>

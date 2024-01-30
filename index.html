@@ -21,20 +21,6 @@
     <!--                                                                   H@Qo                   -->
     <title>阿兹卡班毕业生</title>
     <style>
-        body{
-            /* 鼠标 */
-            cursor:url(https://newazkbbys.github.io/files/mouse.ico),auto;
-            /* 背景 */
-            position: absolute;
-            top:auto;
-            right: auto;
-            bottom:auto;
-            left: auto;
-            background: url(https://newazkbbys.github.io/files/bg.png);
-            background-size: cover;
-            backdrop-filter: blur(10px);
-    	}
-
         #navigation2{
             list-style-type:none;
             /*↑移除列表前小标志*/
@@ -65,7 +51,7 @@
             left: 0;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
             padding: 10px 0;
             text-align: center;
             font-size: 24px;
@@ -91,7 +77,7 @@
             background-color: #8e24c4;
             color: white;
             border: none;
-            cursor: pointer;
+            cursor: url(https://newazkbbys.github.io/files/mouse.ico),auto;
         }
 
         button:hover {
@@ -169,7 +155,7 @@
                 <button>阿兹卡班毕业生的个人中心</button>
             </a>
             <br/>
-            <a href = "http://newazkbbys.mysxl.cn">
+            <a href = "http://azkbbys.mysxl.cn">
                 <button>另一个官网</button>
             </a>
             <br/>
@@ -215,12 +201,12 @@
                 <button>接收传输文件</button>
             </a>
             <br/>
-            <a href = "http://newazkbbys.github.io/onlinetools">
-                <button>🛠️🛠️【火】在线工具🛠️🛠️</button>
-            </a>
-            <br/>
             <a href = "http://newazkbbys.github.io/update_log.html">
                 <button>更新日志</button>
+            </a>
+            <br/>
+            <a href = "http://newazkbbys.github.io/onlinetools">
+                <button>🛠️🛠️【火】在线工具🛠️🛠️</button>
             </a>
             <br/>
             <a href = "https://newazkbbys.github.io/aboutbys">
@@ -341,16 +327,26 @@
         // 历史上的今天
         $(document).ready(function() {
             $(document).ready(function() {
-            $.ajax({
-                url: "https://api.andeer.top/API/history.php",
-                dataType: "json",
-                success: function(response) {
-                    var data = response.data;
-                    $("#historytoday").text(data);
-                }
+                $.ajax({
+                    url: "https://api.andeer.top/API/history.php",
+                    dataType: "json",
+                    success: function(response) {
+                        var data = response.data;
+                        $("#historytoday").text(data);
+                    }
+                });
             });
         });
-        });
     </script>
+    <style>
+    	body{
+    	    background: url("./files/bg.png") no-repeat center center fixed;
+            /*兼容浏览器版本*/
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            cursor: url(https://newazkbbys.github.io/files/mouse.ico),auto;
+    	}
+    </style>
 </body>
 </html>
