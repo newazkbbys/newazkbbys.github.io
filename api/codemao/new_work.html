@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bysAPI</title>
+</head>
+<body>
+    <script>
+        // 获取网址中的参数
+        var urlParams = new URLSearchParams(window.location.search);
+        var offset = urlParams.get('offset');
+        var limit = urlParams.get('limit');
+        if(!offset){
+            offset = 0
+        }
+        if(!limit){
+            limit = 20
+        }
+        // 发起HTTP请求获取数据
+        fetch(`https://api.codemao.cn/creation-tools/v1/pc/discover/newest-work?work_origin_type=ORIGINAL_WORK&offset=${offset}&limit=${limit}`)
+        .then(response => response.json())
+        .then(data => {
+            // 输出返回的数据
+            const data2 = {
+                code: "200",
+                data: data
+            }
+            document.write("<pre>" + JSON.stringify(data2, null, 2) + "</pre>");
+        })
+        .catch(error => {
+            document.write(JSON.stringify({code: "404", error: error}));
+        });
+    </script>
+</body>
+</html>

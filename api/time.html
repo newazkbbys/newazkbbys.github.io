@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bysAPI</title>
+</head>
+<body>
+    <script>
+        const date = new Date()
+        const year = date.getFullYear()
+        const month = date.getMonth() + 1
+        const day = date.getDate()
+        const hour = date.getHours()
+        const minute = date.getMinutes()
+        const second = date.getSeconds()
+
+        // 创建一个JavaScript字典
+        var data = {
+            code: "200",
+            data:{
+                year: year,
+                month: month,
+                day: day,
+                hour: hour,
+                minute: minute,
+                second: second
+            }
+        };
+
+        // 将字典转换为JSON格式
+        var jsonData = JSON.stringify(data);
+
+        // 输出JSON数据
+        document.write(jsonData);
+    </script>
+</body>
+</html>
